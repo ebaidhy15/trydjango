@@ -4,9 +4,10 @@
 <h1>About Page</h1>
 
 <p>
-    {{ my_text }}
+    {{ my_text|capfirst|upper }}
     {{ my_number }}
     {{ my_list }}
+    {{ my_html|safe }}
 </p>
 <ul>
 {% for my_sub_item in my_list %}
